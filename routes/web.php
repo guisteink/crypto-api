@@ -17,5 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/{coin}/most-recent', [CryptoController::class, 'mostRecent'])->name('Most Recent Price');
-Route::post('/{coin}/history', [CryptoController::class, 'historyPrice'])->name('History Price');
+Route::get('/{coin}/most-recent', [CryptoController::class, 'mostRecent'])->name('Most Recent Price');
+Route::get('/{coin}/history', [CryptoController::class, 'historyPrice'])->name('History Price');
