@@ -10,7 +10,6 @@ class CoinGeecko
 
     public function __construct()
     {
-        // $this->base_url = "https://api.coingecko.com/api/v3/coins/bitcoin/history";
         $this->base_url = "https://api.coingecko.com/api/v3/coins";
     }
 
