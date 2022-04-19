@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Models\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class BitcoinPriceHistory extends Model
+class CoinPriceHistory extends Model
 {
     protected $fillable = [
         'coingeecko_id',
@@ -13,5 +13,4 @@ class BitcoinPriceHistory extends Model
         'thumb_url',
         'current_price'
     ];
-
 }

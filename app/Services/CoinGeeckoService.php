@@ -4,7 +4,7 @@ namespace App\Services;
 
 use Illuminate\Support\Facades\Http;
 
-class CoinGeecko
+class CoinGeeckoService
 {
     protected $base_url;
 
@@ -19,4 +19,5 @@ class CoinGeecko
 
         return $response;
     }
-}
+
+} 

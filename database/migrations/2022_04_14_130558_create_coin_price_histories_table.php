@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBitcoinPriceHistoriesTable extends Migration
+class CreateCoinPriceHistoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateBitcoinPriceHistoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('bitcoin_price_histories', function (Blueprint $table) {
+        Schema::create('coin_price_histories', function (Blueprint $table) {
             $table->id();
             
             $table->string('coingeecko_id');
@@ -33,6 +33,6 @@ class CreateBitcoinPriceHistoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bitcoin_price_histories');
+        Schema::dropIfExists('coin_price_histories');
     }
 }

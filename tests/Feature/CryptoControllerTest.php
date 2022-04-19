@@ -7,12 +7,13 @@ use Tests\TestCase;
 
 class WebTest extends TestCase
 {
+    use RefreshDatabase;
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testshould_return_201_status_code_mostrecent_()
+    public function test_should_return_201_status_code_mostrecent_()
     {
         $response = $this->get('/bitcoin/most-recent');
         $response->assertCreated(true);

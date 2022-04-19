@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CryptoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +15,3 @@ use App\Http\Controllers\CryptoController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/{coin}/most-recent', [CryptoController::class, 'mostRecent'])->name('Most Recent Price');
-Route::get('/{coin}/history', [CryptoController::class, 'historyPrice'])->name('History Price');
